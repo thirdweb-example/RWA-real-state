@@ -1,5 +1,5 @@
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -24,8 +24,6 @@ a:hover {
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
   min-width: 320px;
   min-height: 100vh;
 }
@@ -49,9 +47,8 @@ button {
 button:hover {
   border-color: #646cff;
 }
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+button:focus {
+  outline: none;
 }
 
 @media (prefers-color-scheme: light) {
@@ -64,5 +61,21 @@ button:focus-visible {
   }
   button {
     background-color: #f9f9f9;
+  }
+}
+
+/* Utils for transaction hash display */
+.hash-container {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-word;
+  font-family: monospace;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .MuiContainer-root {
+    padding-left: 12px !important;
+    padding-right: 12px !important;
   }
 }
